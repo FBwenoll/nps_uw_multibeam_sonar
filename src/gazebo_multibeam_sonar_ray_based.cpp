@@ -340,11 +340,7 @@ void NpsGazeboRosMultibeamSonarRay::Advertise()
 
   // Publisher for sonar raw data
   ros::AdvertiseOptions sonar_image_raw_ao =
-<<<<<<< HEAD
     ros::AdvertiseOptions::create<marine_acoustic_msgs::ProjectedSonarImage>(
-=======
-    ros::AdvertiseOptions::create<acoustic_msgs::ProjectedSonarImage>(
->>>>>>> 50c34356513d6d0827eb5ad6f5cc691caf06d7ab
       this->sonar_image_raw_topic_name_, 1,
       boost::bind(&NpsGazeboRosMultibeamSonarRay::SonarImageConnect, this),
       boost::bind(&NpsGazeboRosMultibeamSonarRay::SonarImageDisconnect, this),
@@ -532,11 +528,7 @@ void NpsGazeboRosMultibeamSonarRay::ComputeSonarImage()
         = this->sensor_update_time_.sec;
   this->sonar_image_raw_msg_.header.stamp.nsec
         = this->sensor_update_time_.nsec;
-<<<<<<< HEAD
   marine_acoustic_msgs::PingInfo ping_info_msg_;
-=======
-  acoustic_msgs::PingInfo ping_info_msg_;
->>>>>>> 50c34356513d6d0827eb5ad6f5cc691caf06d7ab
   ping_info_msg_.frequency = this->sonarFreq;
   ping_info_msg_.sound_speed = this->soundSpeed;
   for (size_t beam = 0; beam < nBeams; beam ++)
@@ -557,11 +549,7 @@ void NpsGazeboRosMultibeamSonarRay::ComputeSonarImage()
   for (size_t i = 0; i < P_Beams[0].size(); i ++)
     ranges.push_back(rangeVector[i]);
   this->sonar_image_raw_msg_.ranges = ranges;
-<<<<<<< HEAD
   marine_acoustic_msgs::SonarImageData sonar_image_data;
-=======
-  acoustic_msgs::SonarImageData sonar_image_data;
->>>>>>> 50c34356513d6d0827eb5ad6f5cc691caf06d7ab
   sonar_image_data.is_bigendian = false;
   sonar_image_data.dtype = 0; //DTYPE_UINT8
   sonar_image_data.beam_count = nBeams;

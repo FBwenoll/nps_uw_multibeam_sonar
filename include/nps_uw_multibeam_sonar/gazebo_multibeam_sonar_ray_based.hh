@@ -54,15 +54,9 @@
 #include <sensor_msgs/fill_image.h>
 #include <std_msgs/Float64.h>
 #include <image_transport/image_transport.h>
-<<<<<<< HEAD
 #include <marine_acoustic_msgs/ProjectedSonarImage.h>
 #include <marine_acoustic_msgs/SonarImageData.h>
 #include <marine_acoustic_msgs/PingInfo.h>
-=======
-#include <acoustic_msgs/ProjectedSonarImage.h>
-#include <acoustic_msgs/SonarImageData.h>
-#include <acoustic_msgs/PingInfo.h>
->>>>>>> 50c34356513d6d0827eb5ad6f5cc691caf06d7ab
 #include <geometry_msgs/Vector3.h>
 #include <std_msgs/Float32.h>
 
@@ -192,11 +186,7 @@ namespace gazebo
 
     private: sensor_msgs::PointCloud2 point_cloud_msg_;
     private: sensor_msgs::Image normal_image_msg_;
-<<<<<<< HEAD
     private: marine_acoustic_msgs::ProjectedSonarImage sonar_image_raw_msg_;
-=======
-    private: acoustic_msgs::ProjectedSonarImage sonar_image_raw_msg_;
->>>>>>> 50c34356513d6d0827eb5ad6f5cc691caf06d7ab
     private: sensor_msgs::Image sonar_image_msg_;
     private: sensor_msgs::Image sonar_image_mono_msg_;
     private: cv::Mat point_cloud_image_;

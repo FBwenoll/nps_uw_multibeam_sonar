@@ -19,13 +19,8 @@
   <depend>uuv_sensor_ros_plugins</depend>
   <depend>gazebo_msgs</depend>
   <depend>sensor_msgs</depend>
-<<<<<<< HEAD
   <!-- From https://github.com/apl-ocean-engineering/marine_msgs.git -->
   <depend>marine_acoustic_msgs</depend>
-=======
-  <!-- From https://github.com/apl-ocean-engineering/hydrographic_msgs -->
-  <depend>acoustic_msgs</depend>
->>>>>>> 50c34356513d6d0827eb5ad6f5cc691caf06d7ab
   <depend>std_msgs</depend>
   <depend>roscpp</depend>
   <depend>rospy</depend>
